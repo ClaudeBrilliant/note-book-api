@@ -1,0 +1,37 @@
+### Create a new book
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+  "title": "Clean",
+  "content": "Clean here"
+
+}
+### Get all books
+GET http://localhost:3000/notes
+
+### Get one book by ID
+GET http://localhost:3000/notes/5
+
+### Get book by ISBN
+GET http://localhost:3000/books/isbn/100
+
+### Count book by year
+GET http://localhost:3000/books/count/2025
+
+### Update a book
+PATCH  http://localhost:3000/notes/4
+Content-Type: application/json
+
+{
+  "name": "Dollar heist Code (Updated)",
+  "author": "Bro code",
+  "publishedYear": "2021",
+  "isbn": "300"
+}
+
+### Soft delete a book
+DELETE  http://localhost:3000/books/3
+
+### Hard delete a book
+DELETE http://localhost:3000/notes/5/permanent
