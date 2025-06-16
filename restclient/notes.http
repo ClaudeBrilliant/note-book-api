@@ -3,7 +3,7 @@ POST http://localhost:3000/notes
 Content-Type: application/json
 
 {
-  "title": "Clean",
+  "title": "Clean more",
   "content": "Clean here"
 
 }
@@ -11,7 +11,7 @@ Content-Type: application/json
 GET http://localhost:3000/notes
 
 ### Get one book by ID
-GET http://localhost:3000/notes/5
+GET http://localhost:3000/notes/4
 
 ### Get book by ISBN
 GET http://localhost:3000/books/isbn/100
